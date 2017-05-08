@@ -70,6 +70,7 @@ export default {
       this.beer.description = item.description || ''
       this.beer.name = item.name
       this.beer.image = item.image_url
+      this.beer.date = item.first_brewed
       this.beer.contributedBy = item.contributed_by
       this.beer.abv = item.abv
       this.beer.ibu = item.ibu
