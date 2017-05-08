@@ -3,7 +3,7 @@
     <footer class="footer">
       <nav class="level">
         <div class="level-item">
-          <img :src="'static/images/transparentLogo.svg'" class="footer-image-logo">
+          <img :src="config.images.logo.footer" class="footer-image-logo">
         </div>
       </nav>
     </footer>
@@ -11,8 +11,13 @@
 </template>
 
 <script>
+import { computedMixins } from '@/mixins/main'
+
 export default {
-  name: 'JmobFooter'
+  name: 'JmobFooter',
+  mixins: [
+    computedMixins
+  ]
 }
 </script>
 

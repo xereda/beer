@@ -7,8 +7,8 @@
         </a>
       </div>
 
-      <div class="nav-center is-hidden-tablet-only" :href="config.urls.facebook">
-        <a class="nav-item is-hidden-mobile">
+      <div class="nav-center is-hidden-tablet-only">
+        <a class="nav-item is-hidden-mobile" :href="config.urls.facebook">
           <span class="icon">
             <i class="fa fa-facebook"></i>
           </span>

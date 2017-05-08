@@ -42,11 +42,13 @@
 </template>
 
 <script>
+import store from '@/store/store'
 import Vue from 'vue'
 import VueLazyload from 'vue-lazyload'
+
 Vue.use(VueLazyload, {
   preLoad: 1.3,
-  loading: '../../static/images/loading.gif',
+  loading: store.state.config.images.loading,
   attempt: 1
 })
 import { computedMixins, methodsMixins } from '@/mixins/main'

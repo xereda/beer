@@ -11,10 +11,12 @@ export default {
     },
     limitePerPage: 40,
     images: {
+      loading: '../../static/images/loading.gif',
       defaultImagePreview: 'static/images/backgroundImage.svg',
       logo: {
         header: 'static/images/beerHeader.svg',
-        hero: 'static/images/beerHero.svg'
+        hero: 'static/images/beerHero.svg',
+        footer: 'static/images/transparentLogo.svg'
       }
     },
     urls: {
