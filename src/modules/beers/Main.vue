@@ -9,11 +9,11 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="beer in beers">
+        <tr v-for="(beer, index) in beers">
           <td>{{ beer.name }}</td>
           <td class="is-hidden-mobile">{{ beer.tagline }}</td>
           <td>
-            <a class="button is-small" @click="openDetail(beer.id)">
+            <a class="button is-small" @click="openDetail(beer.id)" :id="'btn-access-detail-' + index">
               <span class="icon is-small">
                 <i class="fa fa-search"></i>
               </span>

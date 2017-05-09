@@ -6,7 +6,7 @@
 
 ``` bash
 
-# Instrucoes para execucao do teste
+# Instrucoes para execucao da aplicacao
 # Apos clonar localmente o repositorio, execute o shell script:
 ./.local-server
 
@@ -26,6 +26,19 @@ npm run build
 
 # build for production and view the bundle analyzer report
 npm run build --report
+```
+
+# PARA EXECUCAO DOS TESTES UNITARIOS E E2E
+
+``` bash
+
+yarn run test
+
+# ou
+
+yarn run unit
+yarn run e2e
+
 ```
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

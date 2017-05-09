@@ -10,10 +10,15 @@ module.exports = {
 
     browser
       .url(devServer)
-      .waitForElementVisible('#app', 5000)
-      .assert.elementPresent('.hello')
-      .assert.containsText('h1', 'Welcome to Your Vue.js App')
-      .assert.elementCount('img', 1)
+      .waitForElementVisible('body', 5000)
+      .assert.elementPresent('.hero')
+      .assert.containsText('h2', 'Test developed by Xereda')
+      .assert.elementCount('img', 3)
+      .waitForElementVisible('a[id=btn-access-detail-10]', 3000)
+      .click('a[id=btn-access-detail-10]')
+      .pause(2000)
+      .waitForElementVisible('#beer-detail', 3000)
+      .assert.elementPresent('.custom-card-detail-body')
       .end()
   }
 }

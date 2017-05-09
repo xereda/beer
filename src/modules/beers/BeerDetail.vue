@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="" id="beer-detail">
     <breadcrumbs :objectLinks="breadcrumbsLinks"></breadcrumbs>
     <jmob-card-detail :beer="beer"></jmob-card-detail>
   </div>

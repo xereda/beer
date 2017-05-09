@@ -29,18 +29,12 @@ export default {
   },
   computed: {
     links () {
-      if (this.state === 'new') return this.objectLinks.new
-      if (this.state === 'update') return this.objectLinks.update
       return this.objectLinks
     }
   },
   props: {
     objectLinks: {
       required: true
-    },
-    state: {
-      type: String,
-      default: ''
     }
   }
 }
